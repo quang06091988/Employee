@@ -1,0 +1,26 @@
+Setup and Run Project in Local
+
+1. Prepare Postgres database
+- host: "localhost"
+- port: 5432
+- username: "postgres_admin"
+- password: "admin"
+- database: "retail-store"
+
+2. Create table to database "retail-store"
+open command line => cd to "retail-store" folder => run below commands
+- npm install
+- npm run start:dev
+close command line
+
+3. Migration data to tables "user, product, provider"
+open command line => cd to "retail-store" folder => run below command
+- npm run migration
+close command line
+
+4. run api-server
+open command line => cd to "retail-store" folder => run below command
+- npm run start:dev
+
+5. Test api
+open Postman => import file "test-project-via-postman" => start test api
